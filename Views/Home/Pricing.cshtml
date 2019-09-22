@@ -1,0 +1,38 @@
+﻿@model IEnumerable<WowProfitCalcProfessions.Models.ItemModel>;
+@{
+	Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+	<meta name="viewport" content="width=device-width" />
+	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+	<title>Pricing</title>
+</head>
+<body class="panel-body">
+	<h2>Costs</h2>
+	<table class="table table-sm table-striped table-bordered">
+		<thead>
+			<tr>
+				<th>Name</th>
+				<th>Cost</th>
+			</tr>
+		</thead>
+		<tbody>
+			@{
+				int count = 0;
+				foreach (WowProfitCalcProfessions.Models.ItemModel item in Model)
+				{
+					count = count + 1;
+					<tr>
+						<td>@count. @item.Name</td>
+						<td>@item.Cost</td>
+					</tr>
+				}
+			}
+		</tbody>
+	</table>
+</body>
+</html>
