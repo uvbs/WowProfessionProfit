@@ -64,12 +64,12 @@ using WowProfitCalcProfessions.Models;
             WriteLiteral("\r\n<!DOCTYPE html>\r\n\r\n<html>\r\n");
             EndContext();
             BeginContext(117, 170, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "4767dbaa99234fd784f4e6784d697364", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("head", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "195c7a28a3774cb2841ca42b3e8184e4", async() => {
                 BeginContext(123, 59, true);
                 WriteLiteral("\r\n\t<meta name=\"viewport\" content=\"width=device-width\" />\r\n\t");
                 EndContext();
                 BeginContext(182, 71, false);
-                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "8ef00b8966514c0e9a92ee201e0f59b6", async() => {
+                __tagHelperExecutionContext = __tagHelperScopeManager.Begin("link", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.SelfClosing, "b54aeafc49784c1193147af8fe2b4c79", async() => {
                 }
                 );
                 __Microsoft_AspNetCore_Mvc_Razor_TagHelpers_UrlResolutionTagHelper = CreateTagHelper<global::Microsoft.AspNetCore.Mvc.Razor.TagHelpers.UrlResolutionTagHelper>();
@@ -103,7 +103,7 @@ using WowProfitCalcProfessions.Models;
             WriteLiteral("\r\n");
             EndContext();
             BeginContext(289, 455, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "5d5f0787bb3a4b5e82e343b242ef7e40", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("body", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "cc26d00e3223487fb92875d45d4d7bfc", async() => {
                 BeginContext(314, 172, true);
                 WriteLiteral("\r\n\t<h2>Costs</h2>\r\n\t<table class=\"table table-sm table-striped table-bordered\">\r\n\t\t<thead>\r\n\t\t\t<tr>\r\n\t\t\t\t<th>Name</th>\r\n\t\t\t\t<th>Cost</th>\r\n\t\t\t</tr>\r\n\t\t</thead>\r\n\t\t<tbody>\r\n");
                 EndContext();
