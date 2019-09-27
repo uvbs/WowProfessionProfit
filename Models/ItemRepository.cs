@@ -11,7 +11,7 @@ namespace WowProfitCalcProfessions.Models
         public static void UpdateCosts()
         {
             Lua lua = new Lua();
-
+            
             //lua.DoFile(@"C:\Auctionator.lua");
             lua.DoFile("./wwwroot/Auctionator.lua");
             const string tbPath = "AUCTIONATOR_PRICE_DATABASE.Yojamba_Horde"; // make server selectable 
@@ -19,6 +19,9 @@ namespace WowProfitCalcProfessions.Models
 
             LuaTable opt = lua.GetTable(tbPath);
             Dictionary<object, object> dict = lua.GetTableDict(opt);
+
+            costs = new ItemModel[dict.Count];
+            int i = 0;
             foreach (KeyValuePair<object, object> de in dict)
             {
                 string check = de.Key as string;
@@ -27,11 +30,17 @@ namespace WowProfitCalcProfessions.Models
                 {
                     string itemName = specificItem.Key as string;
                     if (itemName == "mr")
-                        costs.Add(new ItemModel() { Name = check, Cost = Convert.ToInt32(specificItem.Value) });
+                        costs[i++] = new ItemModel(check, Convert.ToInt32(specificItem.Value));
                 }
             }
         }
-        private static List<ItemModel> costs = new List<ItemModel>();
-        public static List<ItemModel> Costs => costs;
+
+        public static ItemModel FindSpecificItem(string Name)
+        {
+            return costs.FirstOrDefault(i => i.Name == Name);
+        }
+
+        private static ItemModel[] costs;
+        public static ItemModel[] Costs => costs;
     }
 }

@@ -26,9 +26,10 @@
 				foreach (WowProfitCalcProfessions.Models.ItemModel item in Model)
 				{
 					count = count + 1;
+					float cost = item.Cost / 100f;
 					<tr>
 						<td>@count. @item.Name</td>
-						<td>@item.Cost</td>
+						<td>@cost s</td>
 					</tr>
 				}
 			}

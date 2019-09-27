@@ -8,14 +8,89 @@
 <head>
 	<meta name="viewport" content="width=device-width" />
 	<link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.css" />
+	<link rel="stylesheet" href="~/css/main.css" />
 	<title>Index</title>
 </head>
-<body>
-<div class="text-center"></div>
-<h2>WoWHome</h2>
-<a class = "btn btn-info" asp-action="Pricing"> Click me to view pricing!</a>
-<a class="btn btn-info" asp-action="Pricing2"> Click me to view ALL pricing!</a>
-<a class="btn btn-info" asp-action="Update"> Click me to Update Pricing!</a>
+<body class="bg">
+<div class="text-center">
+	<h2 style="color: white;">WoWHome</h2>
+</div>
+<table>
+	<tr>
+		<td>
+			<table class="table table-condensed">
+				<thead class="proftable-row">
+				<tr>
+					<th class="text-center">
+						TAILORING
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						<a class="btn btn-info" asp-action="PricingMageweaveBag"> Click me to Mageweave Bag Pricing!</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a class="btn btn-info" asp-action="PricingSilkBag"> Click me to view Silk Bag pricing!</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a class="btn btn-info" asp-action="Pricing2"> Click me to view ALL items!</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a class="btn btn-info" asp-action="Update"> Click me to Update Pricing!</a>
+					</td>
+				</tr>
+				<tr> <td></td></tr> <!-- Blank Filler-->
+				</tbody>
+			</table>
+		</td>
+		<td>
+			<table class="table table-condensed">
+				<thead class="proftable-row">
+				<tr>
+					<th class="text-center">
+						LEATHERWORKING
+					</th>
+				</tr>
+				</thead>
+				<tbody>
+				<tr>
+					<td>
+						<a class="btn btn-info" asp-action="PricingMageweaveBag"> Click me to Mageweave Bag Pricing!</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a class="btn btn-info" asp-action="PricingSilkBag"> Click me to view Silk Bag pricing!</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a class="btn btn-info" asp-action="Pricing2"> Click me to view ALL items!</a>
+					</td>
+				</tr>
+				<tr>
+					<td>
+						<a class="btn btn-info" asp-action="Update"> Click me to Update Pricing!</a>
+					</td>
+				</tr>
+				<tr> <td></td></tr> <!-- Blank Filler-->
+				</tbody>
+			</table>
+		</td>
+	</tr>
+
+</table>
+	
+
+
 </body>
 </html>
 

@@ -8,29 +8,30 @@ using NLua;
 
 namespace WowProfitCalcProfessions.Models
 {
-    /*
-     *TODO: Make this allow a user to put in what items they want, and see profit
-     *
-     */
     public class ProfessionCostModel
     {
-       private int[] MatsAndQty;
+        private int[] matCosts;
+        private int[] matQuantities;
 
-        public ProfessionCostModel(params int[] MatsAndQty)
+        public ProfessionCostModel(int[] matCosts, int[] matQuantity)
         {
-            this.MatsAndQty = MatsAndQty;
+            this.matCosts = matCosts;
+            this.matQuantities = matQuantity;
         }
 
-        public float ReturnProfit()
+        public int ReturnProfit()
         {
-            int totalCost = 0;
-
-            return totalCost;
+            int outcomeCost = 0;
+            for (int i = 0; i < matCosts.Length; i++)
+            {
+                outcomeCost += matCosts[i] * matQuantities[i];
+            }
+            return outcomeCost;
         }
 
-        public void Test()
+        public ItemModel ReturnToItem(string customName)
         {
-
+            return new ItemModel(customName,ReturnProfit());
         }
     }
 }

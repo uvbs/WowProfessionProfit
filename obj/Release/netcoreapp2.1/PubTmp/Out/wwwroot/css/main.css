@@ -1,0 +1,16 @@
+﻿.bg {
+	background-color: #222222;
+}
+.proftable-row {
+	color: white;
+}
+.table {
+	display: inline-block;
+	vertical-align: top;
+	padding: 50px;
+}
+
+.table-condensed > thead > tr > th, .table-condensed > tbody > tr > th, .table-condensed > tfoot > tr > th, .table-condensed > thead > tr > td, .table-condensed > tbody > tr > td, .table-condensed > tfoot > tr > td {
+	padding: 15px;
+	text-align: center;
+}
